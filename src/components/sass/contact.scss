@@ -1,0 +1,42 @@
+@import './variables.scss';
+.contact {
+  max-width: 600px;
+  min-height: auto;
+  margin: 0px auto 100px;
+  padding: 100px 0px;
+  text-align: center;
+  & .overline {
+    display: block;
+    margin-bottom: 20px;
+    color: $green;
+    font-family: $font-mono;
+    font-size: $fz-md;
+    font-weight: 400;
+  }
+  & .numbered-heading::after {
+    content: '';
+    width: 0;
+  }
+  & .title {
+    font-size: clamp(40px, 5vw, 60px);
+    margin: 0px 0px 10px;
+    font-weight: 600;
+    color: $lightest-slate;
+    line-height: 1.1;
+  }
+  a.email-link {
+    color: $green;
+    background-color: transparent;
+    border: 1px solid $green;
+    border-radius: 4px;
+    padding: 1.25rem 1.75rem;
+    font-size: $fz-sm;
+    font-family: $font-mono;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: $transition;
+    margin: auto;
+    margin-top: 50px;
+  }
+}

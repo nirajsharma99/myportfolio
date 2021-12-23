@@ -1,0 +1,66 @@
+:root {
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+}
+body {
+  background-color: #0a192f !important;
+  width: 100%;
+  height: 100%;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+}
+
+.content {
+  padding: 0 150px;
+}
+section {
+  max-width: 1000px;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.App-header {
+  padding: 0px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 3;
+  background-color: rgba(10, 25, 47, 0.85);
+  box-shadow: 0 10px 30px -10px var(--navy-shadow);
+}
+.App-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  backdrop-filter: blur(1px);
+}
+
+@media screen and (max-width: 1080px) {
+  .content {
+    padding: 0px 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 0px 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 0px 25px;
+  }
+}

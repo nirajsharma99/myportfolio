@@ -1,0 +1,135 @@
+@import './variables.scss';
+
+.experience {
+  max-width: 700px;
+  margin: auto;
+  & .inner {
+    display: flex;
+  }
+}
+
+.tabList {
+  display: flex;
+  flex-direction: column;
+  & .tabButtons {
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: $tab-height;
+    padding: 0px 20px 2px;
+    outline: none;
+    border: none;
+    border-left: 2px solid $lightest-navy;
+    background-color: transparent;
+    color: $slate;
+    font-family: $font-mono;
+    font-size: $fz-xs;
+    text-align: left;
+    white-space: nowrap;
+    &:hover,
+    &:focus {
+      background-color: $light-navy;
+      color: $green;
+    }
+    &.active {
+      border-left: 3px solid $green;
+      color: $green;
+    }
+  }
+}
+
+.tabPanels {
+  position: relative;
+  width: 100%;
+  margin-left: 20px;
+  & .tabPanels-inner {
+    width: 100%;
+    height: auto;
+    padding: 10px 5px;
+  }
+  & h3 {
+    margin-bottom: 2px;
+    font-size: $fz-xxl;
+    font-weight: 500;
+    line-height: 1.3;
+    color: $lightest-slate;
+  }
+  & .company {
+    color: $green;
+    & a.link {
+      display: inline-block;
+      text-decoration: none;
+      text-decoration-skip-ink: auto;
+      position: relative;
+      color: $green;
+      & ::after {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 1px;
+        position: relative;
+        bottom: 0.37em;
+        background-color: $green;
+        transition: $transition;
+        opacity: 0.5;
+      }
+    }
+  }
+  & .range {
+    margin-bottom: 25px;
+    color: $light-slate;
+    font-family: $font-mono;
+    font-size: $fz-xs;
+  }
+  & ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-size: $fz-lg;
+    & li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 10px;
+      color: $slate;
+      &::before {
+        content: '▹';
+        position: absolute;
+        left: 0px;
+        color: $green;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experience .inner {
+    display: block;
+  }
+  .tabList {
+    flex-direction: row;
+    & .tabButtons {
+      border: none;
+      border-bottom: 2px solid $lightest-navy;
+      display: flex;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      min-width: 120px;
+      padding: 0px 15px;
+      text-align: center;
+      &.active {
+        border: none;
+        border-bottom: 3px solid $green;
+      }
+    }
+  }
+  .tabPanels {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
