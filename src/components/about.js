@@ -11,11 +11,9 @@ function About() {
           </p>
           <p>
             I like building interactive and responsive websites. Building things
-            is what I love the most. Fast-forward to today, and I’ve had the
-            privilege of working at an advertising agency, a start-up, a huge
-            corporation, and a student-led design studio. My main focus these
-            days is building accessible, inclusive products and digital
-            experiences at Upstatement for a variety of clients.
+            is what I love the most. I am looking for new opportunities as
+            React/Full Stack Developer. Currently am working at Deloitte as an
+            ABAP Developer.
           </p>
 
           <p>Here are a few technologies I’ve been working with recently:</p>
