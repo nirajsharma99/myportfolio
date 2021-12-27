@@ -87,16 +87,10 @@ section {
     transition: all 0.2s;
   }
 }
-.App-header-1::before,
-.App-header-2::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  backdrop-filter: blur(1px);
+.App-header-1,
+.App-header-2 {
+  background-color: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(10px);
 }
 
 @media screen and (max-width: 1080px) {
