@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { MenuItems } from './menu-items';
 import '../sass/navbar.scss';
 import Hamburger from './hamburger';

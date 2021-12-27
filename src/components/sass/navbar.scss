@@ -35,6 +35,9 @@
     text-decoration: none;
     cursor: pointer;
     margin-left: 15px;
+    &:hover {
+      background-color: $green-tint;
+    }
   }
 }
 .nav-menu li {

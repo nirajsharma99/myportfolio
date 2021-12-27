@@ -38,5 +38,8 @@
     transition: $transition;
     margin: auto;
     margin-top: 50px;
+    &:hover {
+      background-color: $green-tint;
+    }
   }
 }
