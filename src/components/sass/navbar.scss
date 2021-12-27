@@ -83,10 +83,9 @@ a.nav-links:hover {
     color: gray !important;
   }
 }*/
-.nav-name {
-  font-size: 40px;
+.logo {
+  width: 60px;
 }
-
 .menu-icon {
   display: none;
 }
@@ -141,6 +140,10 @@ a.nav-links:hover {
   .NavbarItems {
     position: fixed;
     width: 100%;
+  }
+  .logo {
+    width: 50px;
+    margin: 0px 20px;
   }
   .nav-contents {
     display: flex;

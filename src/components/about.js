@@ -1,5 +1,13 @@
 import './sass/about.scss';
 function About() {
+  const skills = [
+    'HTML5',
+    'JavaScript (ES6+)',
+    'React',
+    'Node',
+    'Firebase',
+    'Express.js',
+  ];
   return (
     <section id="about" className="about">
       <h2 className="numbered-heading">About Me</h2>
@@ -16,11 +24,13 @@ function About() {
             ABAP Developer.
           </p>
 
-          <p>Here are a few technologies I’ve been working with recently:</p>
+          <p>
+            <h5>I love</h5>
+          </p>
           <ul className="skills-list">
-            <li>JavaScript (ES6+)</li>
-            <li>React</li>
-            <li>Node.js</li>
+            {skills.map((skill, i) => (
+              <li key={i}>{skill}</li>
+            ))}
           </ul>
         </div>
         <div className="about-pic">

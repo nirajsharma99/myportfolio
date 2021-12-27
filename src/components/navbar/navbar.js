@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { MenuItems } from './menu-items';
 import '../sass/navbar.scss';
 import Hamburger from './hamburger';
@@ -9,16 +9,18 @@ function Navbar() {
   /*useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);*/
-  const [on, SetOn] = useState(false);
+  const [on, setOn] = useState(false);
   const closeMenu = () => {
-    SetOn(!on);
+    setOn(!on);
   };
+
   return (
     <nav className="NavbarItems">
       <div className="menu-icon">
         <Hamburger on={on} closeMenu={closeMenu} />
       </div>
-      <span className="nav-name">logo</span>
+      <img src="logos/Logo2.1.png" className="logo" />
+
       <div className={on ? 'nav-contents active' : 'nav-contents'}>
         <ol className="nav-menu">
           {MenuItems.map((item, index) => {
