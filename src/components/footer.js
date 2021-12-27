@@ -1,5 +1,4 @@
 import './sass/footer.scss';
-import { email } from '../config';
 import { GitHub, Instagram, LinkedIn, Telegram } from '@material-ui/icons';
 function Footer() {
   return (

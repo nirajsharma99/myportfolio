@@ -19,7 +19,7 @@ function Navbar() {
       <div className="menu-icon">
         <Hamburger on={on} closeMenu={closeMenu} />
       </div>
-      <img src="logos/Logo2.1.png" className="logo" />
+      <img src="logos/Logo2.1.png" className="logo" alt="logo" />
 
       <div className={on ? 'nav-contents active' : 'nav-contents'}>
         <ol className="nav-menu">

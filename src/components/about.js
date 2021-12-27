@@ -24,9 +24,7 @@ function About() {
             ABAP Developer.
           </p>
 
-          <p>
-            <h5>I love</h5>
-          </p>
+          <p className="fw-bold">I love</p>
           <ul className="skills-list">
             {skills.map((skill, i) => (
               <li key={i}>{skill}</li>
