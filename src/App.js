@@ -10,6 +10,7 @@ import Contact from './components/contact';
 import Footer from './components/footer';
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import Loader from './components/loader';
 
 function App() {
   const location = useLocation();
@@ -45,6 +46,7 @@ function App() {
 
   return (
     <div className="App">
+      <Loader />
       <header
         className={
           scrollEffect.className + (scrollEffect.show ? ' active' : ' hidden')
