@@ -39,6 +39,10 @@
     padding: 0.4rem 0.8rem;
     display: inline-block;
     font-family: $font-mono;
+    text-decoration: none;
     cursor: pointer;
+    &:hover {
+      background-color: $green-tint;
+    }
   }
 }

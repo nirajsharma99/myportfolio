@@ -16,7 +16,9 @@ function Home() {
           I like building things for the web. This is the only thing that keeps
           me going. I currently work at Deloitte. as an ABAP Developer.
         </p>
-        <p className="more mt-5">More</p>
+        <a href="#about" className="more mt-5">
+          More
+        </a>
       </div>
     </section>
   );
