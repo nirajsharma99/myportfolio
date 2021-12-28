@@ -7,7 +7,7 @@ function Projects() {
       type: 'Featured Project',
       name: 'Fizzbee Player',
       pic: 'fizzbee.png',
-      desc: 'A customisable music player using Spotify Web API and SDK (Note: Spotify premium is needed).Have implemented the YouTube API too, one can enjoy the music video on the same player,',
+      desc: 'A customisable music player using Spotify Web API and SDK (Note: Spotify premium is needed).Have implemented the YouTube API too, one can enjoy the music video on the same player.',
       techList: ['React', 'Node', 'Express', 'Axios', 'Material-UI'],
       links: [
         {
