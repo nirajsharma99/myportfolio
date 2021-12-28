@@ -1,6 +1,6 @@
 import './sass/projects.scss';
 import { GitHub, LanguageTwoTone } from '@material-ui/icons';
-
+import VanillaTilt from 'vanilla-tilt';
 function Projects() {
   const projects = [
     {
@@ -58,6 +58,13 @@ function Projects() {
       ],
     },
   ];
+  VanillaTilt.init(document.querySelectorAll('.project-image'), {
+    max: 20,
+    speed: 400,
+    glare: true,
+    'max-glare': 0.2,
+    gyroscope: true,
+  });
   return (
     <section id="projects" className="projects">
       <h2 className="numbered-heading">Some Things I’ve Built</h2>

@@ -115,6 +115,7 @@ li.project-inner {
   }
   &:hover {
     background-color: transparent;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
     & .img {
       mix-blend-mode: normal;
       filter: none;
