@@ -14,14 +14,15 @@ function About() {
       <div className="about-inner">
         <div className="about-info">
           <p>
-            Hello! My name is Niraj and I enjoy creating things that live on the
-            internet. My interest in web development started back in 2020.
+            Hello! My name is Niraj. I'm passionate about web design and
+            development. Building things is what I love the most, I like to code
+            things from scratch, and enjoy bringing ideas to life in the
+            browser.I love learning new and better ways to create seamless user
+            experiences with clean, efficient, and scalable code.
           </p>
           <p>
-            I like building interactive and responsive websites. Building things
-            is what I love the most. I am looking for new opportunities as
-            React/Full Stack Developer. Currently am working at Deloitte as an
-            ABAP Developer.
+            I am looking for new opportunities as React/Full Stack Developer.
+            Currently am working at Deloitte as an ABAP Developer.
           </p>
 
           <p className="fw-bold">I love</p>

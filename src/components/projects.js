@@ -67,7 +67,7 @@ function Projects() {
   });
   return (
     <section id="projects" className="projects">
-      <h2 className="numbered-heading">Some Things I’ve Built</h2>
+      <h2 className="numbered-heading">My Recent Works</h2>
       <ul>
         {projects.map((project, i) => (
           <li className="project-inner" key={i}>

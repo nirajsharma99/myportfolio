@@ -3,12 +3,12 @@
   "name": "A web developer :)",
   "icons": [
     {
-      "src": "logos/Logo2.1.png",
+      "src": "logos/Logo2.1_sm.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logos/Logo2.1.png",
+      "src": "logos/Logo2.1_sm.png",
       "type": "image/png",
       "sizes": "192x192"
     },
