@@ -17,6 +17,7 @@
     opacity: 0.15;
     color: $green;
     transition: 250ms ease;
+    font-family: $font-mono;
     animation: floatText 30s linear infinite;
 
     @keyframes floatText {
