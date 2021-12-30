@@ -26,7 +26,12 @@ function Matrix() {
   return (
     <div className="matrix-holder">
       {sloks.map((slok, i) => (
-        <span key={i}>{slok}</span>
+        <span
+          key={i}
+          style={{ animationDelay: `${Math.floor(Math.random() * 20)}s` }}
+        >
+          {slok}
+        </span>
       ))}
     </div>
   );
