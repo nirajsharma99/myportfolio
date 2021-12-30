@@ -11,6 +11,7 @@ import Footer from './components/footer';
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Loader from './components/loader';
+import Matrix from './components/matrix';
 
 function App() {
   const location = useLocation();
@@ -47,6 +48,7 @@ function App() {
   return (
     <div className="App">
       <Loader />
+      <Matrix />
       <header
         className={
           scrollEffect.className + (scrollEffect.show ? ' active' : ' hidden')
